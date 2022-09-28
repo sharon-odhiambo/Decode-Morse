@@ -11,6 +11,6 @@ def decode_word(word)
 end
 
 def decode_sentence(sentence)
-  sentence.split(/ /).map { |word| decode_word word }.join(' ')
+  sentence.split(/  /).map { |word| decode_word word }.join(' ')
 end
-puts(decode_sentence('.- -... --- -..- ..-. ..- .-.. .-.. --- ..-. .-. ..- -... .. . ...'))
+puts(decode_sentence('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...'))
